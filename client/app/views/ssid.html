@@ -8,7 +8,7 @@
     </tr>
     <tr ng-repeat="ssid in ssids | orderBy | startFrom: pagination.first | limitTo: pagination.pageSize">
       <td ng-bind="ssid"></td>
-      <td><a ng-href="http://wigle.net/gps/gps/GPSDB/confirmquery/?latrange1=-34.6199&latrange2=-34.5371&longrange1=-58.528&longrange2=-58.3698&ssid={{ssid}}">Find locations</a></td>
+      <td><a ng-href="http://wigle.net/gps/gps/GPSDB/confirmquery/?latrange1=-34.6199&latrange2=-34.5371&longrange1=-58.528&longrange2=-58.3698&ssid={{ssid}}" target="_blank">Find locations</a></td>
       <td><a ng-href="#/ssid/{{ssid}}">Show clients</a></td>
     </tr>
   </table>
